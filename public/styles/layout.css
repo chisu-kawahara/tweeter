@@ -21,6 +21,9 @@ body {
   font-family: "Source Sans 3", sans-serif;
   font-family: "Bungee", sans-serif;
 }
+nav span {
+  font-family: "Bungee", cursive;
+}
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

@@ -6,6 +6,25 @@
   max-width: 600px; /* max width so it doesn’t stretch too wide */
   margin: 40px auto; /* center horizontally with vertical margin */
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  align-items: center;
+}
 
+.new-tweet textarea {
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  resize: vertical; /* allow vertical resizing */
+}
+
+.new-tweet button {
+  background-color: #1da1f2; /* Twitter blue */
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }

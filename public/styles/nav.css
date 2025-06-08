@@ -12,13 +12,13 @@ nav {
   /* Space on left and right - the size of an em is relative to its parent's font size*/
 }
 
-.new-tweet {
+.new-tweet-arrow {
   display: flex;
   text-align: center;
   align-items: center;
   flex-direction: column;
 }
 
-.new-tweet i {
+.new-tweet-arrow i {
   margin-top: 0.2em;
 }

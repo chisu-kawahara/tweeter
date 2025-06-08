@@ -1,0 +1,11 @@
+.new-tweet {
+  display: flex;
+  background-color: #f0f8ff; /* light blue-ish background */
+  padding: 50px;
+  border-radius: 8px; /* rounded corners */
+  max-width: 600px; /* max width so it doesn’t stretch too wide */
+  margin: 40px auto; /* center horizontally with vertical margin */
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  align-items: center;
+
+}

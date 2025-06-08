@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
 
     <!-- External JS -->
@@ -29,7 +30,7 @@
     <!-- Top nav bar (fixed) -->
     <nav>
       <span class="nav-title">tweeter</span>
-      <div class="new-tweet">
+      <div class="new-tweet-arrow">
         <p>Write a new tweet</p>
         <i class="fa-solid fa-angles-down"></i> <!--angle-double-down icon-->
       </div>
@@ -42,13 +43,25 @@
         <h2>Your Name</h2>
       </div>
     </header>
-    
+
+    <section class="new-tweet">
+      <h2>Compose Tweet</h2>
+      <form>
+        <label for="tweet-text">What are you humming about?</label>
+        <textarea name="text" id="tweet-text"></textarea>
+        <div>
+          <button type="submit">Tweet</button>
+          <output name="counter" class="counter" for="tweet-text">140</output>
+        </div>
+      </form>
+    </section>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
       <h1>Hello Tweets</h1>
       <p>Money doesn't just fall from the sky!</p>
-
+      
+      
     </main>
   </body>
 </html>

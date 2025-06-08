@@ -22,10 +22,14 @@ body {
   padding-top: 120px;
 
 }
-nav span {
-  font-family: "Bungee", cursive;
-}
-
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+nav span {
+  font-family: "Bungee", cursive;
+}
+main {
+  width: 90%;
+  margin: 0 auto;              /* centers horizontally */
+  background-color: #f4f1ec;   /* Match background color with body */
+}

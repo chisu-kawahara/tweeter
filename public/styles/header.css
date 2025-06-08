@@ -2,9 +2,14 @@ header {
   display: flex;
   width: 100%;
   flex-direction: column;
+  height: 400px;
   align-items: center;
   justify-content: center;
-  background-color: #cadbe6;
-  background-image: url("https://www.transparenttextures.com/patterns/ps-neutral.png");
+  background-image: url('/images/my-background.png');
+}
 
+header img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 0.5em;  /* adds space below the image */
 }

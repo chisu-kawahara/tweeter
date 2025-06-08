@@ -63,3 +63,8 @@
   font-size: 16px;
   color: #222;
 }
+
+.counter-warning {
+  color: red;
+  font-weight: bold; /* optional, just makes it stand out more */
+}

@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  height: 120px;
+  width: 100vw;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4056A1;     /*Blue background*/
+  color: #FFFFFF;           /* White font color */
+  padding: 0 1.5em;    
+  /* Space on left and right - the size of an em is relative to its parent's font size*/
+}
+
+.new-tweet {
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+}

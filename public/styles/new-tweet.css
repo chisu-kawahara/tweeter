@@ -17,7 +17,6 @@
   border-radius: 4px;
   resize: vertical; /* allow vertical resizing */
   margin-bottom: 15px; /* space below the textarea */
-  width: 100%;
 }
 
 .new-tweet button {
@@ -33,6 +32,27 @@
 }
 
 .new-tweet button:hover {
-  background-color: #0d8ddb; /* darker on hover */
+  background-color: #0d8ddb;
   cursor: pointer;
+}
+
+.output {
+  padding: 5px 10px;
+  background-color: #e0f7ff;  
+  border: 1px solid #a0d8ff;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  min-width: 40px;
+  text-align: center;
+  display: inline-block;
+  margin-left: 10px; /* space from the button */
+}
+
+.label {
+  display: block;       /* full width */
+  margin-bottom: 8px;   /* space below label */
+  font-weight: bold;
+  font-size: 16px;
+  color: #222;
 }

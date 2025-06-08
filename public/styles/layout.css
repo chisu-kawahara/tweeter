@@ -30,6 +30,7 @@ nav span {
 }
 main {
   width: 90%;
-  margin: 0 auto;              /* centers horizontally */
+  align-items: center; 
+  margin: 0 auto;        /* centers horizontally */
   background-color: #f4f1ec;   /* Match background color with body */
 }

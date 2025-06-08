@@ -1,11 +1,12 @@
 console.log("composer-char-counter.js loaded");
 
 $(document).ready(function() {
-  $(".new-tweet textarea").on('input', function() {
+  $('.new-tweet textarea').on('input', function() {
+    const maxChars = 140;
     const textLength = $(this).val().length;
-    const $counter = $(this).closest('form').find('.counter');
-    const charsLeft = 140 - textLength;
+    const charsLeft = maxChars - textLength;
 
+    const $counter = $(this).closest('form').find('.counter');
     $counter.text(charsLeft);
 
     if (charsLeft < 0) {

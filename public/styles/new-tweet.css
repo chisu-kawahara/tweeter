@@ -7,8 +7,14 @@
   margin: 40px auto; /* center horizontally with vertical margin */
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.new-tweet form {
+  display: flex;     
+  width: 100%;
+  flex-direction: column;   /* stack children vertically */
+  gap: 15px;                /* space between form elements */
+}
 
-.new-tweet textarea {
+.new-tweet textarea:focus {
   font-size: 16px;
   color: #333;
   border: 1px solid #ccc;
@@ -17,10 +23,11 @@
   border-radius: 4px;
   resize: vertical; /* allow vertical resizing */
   margin-bottom: 15px; /* space below the textarea */
+  background-color: #f0faff;
 }
 
 .new-tweet button {
-  background-color: #1da1f2; /* Twitter blue */
+  background-color: #1da1f2; 
   color: white;
   font-size: 16px;
   padding: 8px 16px;

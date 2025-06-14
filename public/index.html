@@ -10,14 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-
+    <link rel="stylesheet" href="/styles/header.css"/>
+    <link rel="stylesheet" href="/styles/new-tweet.css"/>
+    <link rel="stylesheet" href="/styles/tweet.css">
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -42,12 +43,12 @@
         <img src="/images/profile-hex.png">
       </div>
       <div>
-        <h2>Your Name</h2>
+        <h2>Chisu</h2>
       </div>
     </header>
 
     <section class="new-tweet">
-      <h2>Compose Tweet</h2>
+      <h2></h2>
       <form method="post" action="/api/tweets">
         <label for="tweet-text" class="label">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
@@ -57,6 +58,7 @@
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
+
     </section>
 
     <!-- Page-specific (main) content here -->
@@ -65,8 +67,28 @@
     <section class="container">
       <h1>Hello Tweets</h1>
       <p>Money doesn't just fall from the sky!</p>
-    </section>  
-      
-    </main>
+    </section>
+
+    <section class="tweet-container">
+      <article class="tweet">
+        <header>
+          <img src="https://via.placeholder.com/50" alt="User avatar">
+          <h2>User Name</h2>
+          <span>@handle</span>
+        </header>
+    
+        <p>This is a dummy tweet for styling...</p>
+    
+        <footer>
+          <span>Posted 10 minutes ago</span>
+          <div class="icons">
+            <i class="fa-regular fa-flag"></i>
+            <i class="fa-regular fa-retweet"></i>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </footer>
+      </article>
+    </section>
+  </main>
   </body>
 </html>

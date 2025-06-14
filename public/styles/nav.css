@@ -10,6 +10,7 @@ nav {
   color: #FFFFFF;           /* White font color */
   padding: 0 1.5em;    
   /* Space on left and right - the size of an em is relative to its parent's font size*/
+  font-family: "Bungee", cursive;;
 }
 
 .new-tweet-arrow {
@@ -17,8 +18,5 @@ nav {
   text-align: center;
   align-items: center;
   flex-direction: column;
-}
-
-.new-tweet-arrow i {
-  margin-top: 0.2em;
+  padding-bottom: 20px;
 }

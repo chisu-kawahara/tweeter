@@ -10,8 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
@@ -47,22 +45,18 @@
       </div>
     </header>
 
+    <main>
     <section class="new-tweet">
-      <h2></h2>
       <form method="post" action="/api/tweets">
         <label for="tweet-text" class="label">What are you humming about?</label>
-        <textarea name="text" id="tweet-text"></textarea>
+        <textarea name="text" id="tweet-text" maxlength="140"></textarea>
 
         <div>
           <button type="submit" class="tweet-btn">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
-
     </section>
-
-    <!-- Page-specific (main) content here -->
-    <main>
 
     <section class="container">
       <h1>Hello Tweets</h1>
@@ -72,9 +66,11 @@
     <section class="tweet-container">
       <article class="tweet">
         <header>
-          <img src="https://via.placeholder.com/50" alt="User avatar">
-          <h2>User Name</h2>
-          <span>@handle</span>
+          <div class="user-info">
+            <img src="https://via.placeholder.com/50" alt="User avatar">
+            <span class="name">Dexter.B</span>
+          </div>
+          <span class="handle">@dexter123</span>
         </header>
     
         <p>This is a dummy tweet for styling...</p>
@@ -90,5 +86,6 @@
       </article>
     </section>
   </main>
-  </body>
+</body>
+
 </html>

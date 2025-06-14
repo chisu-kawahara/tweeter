@@ -1,56 +1,84 @@
-/* Tweet container */
 .tweet-container {
-  margin-top: 20px;
-  
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* Main tweet box */
-article.tweet {
-  border: 1px solid #ccc;
-  padding: 15px;
+.tweet {
+  border: 2px solid #545149;
   border-radius: 8px;
-  margin-bottom: 10px;
-  transition: box-shadow 0.3s;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f4f1ec;
+  transition: box-shadow 0.3s ease;
 }
 
-/* Header section */
-article.tweet header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-}
-
-article.tweet header img {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-}
-
-/* Tweet text */
-article.tweet p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-/* Footer section */
-article.tweet footer {
+/* Header */
+.tweet header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Source Sans 3", sans-serif;
 }
 
-/* Icons */
-article.tweet .icons i {
+.tweet .user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tweet img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.tweet .name {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #545149;
+}
+
+.tweet .handle {
+  color: #c0c0c0;
+  font-weight: bold;
+}
+
+/* Tweet text */
+.tweet p {
+  margin: 20px 0;
+  font-size: 1.2em;
+  color: #545149;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+/* Footer */
+.tweet footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+  color: #545149;
+  font-family: "Source Sans 3", sans-serif;
+  border-top: 2px solid #545149;
+  padding-top: 10px;
+}
+
+.tweet .icons i {
   margin-left: 10px;
+  color: #1a1a1a;
+  transition: color 0.3s ease;
   cursor: pointer;
-  color: gray;
-  transition: color 0.3s;
 }
-article.tweet:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.tweet .icons i:hover {
+  transform: scale(1.2);
+  color: #4056A1;
 }
 
-article.tweet:hover .icons i {
-  color: #1da1f2; /* Twitter blue */
+/* Hover effect */
+.tweet:hover {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tweet:hover .icons i {
+  color: #4056A1;
 }

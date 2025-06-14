@@ -1,6 +1,9 @@
 /* Creating CSS variable for colour */
 :root {
   --main-text-color: #545149;
+  --hover-icon-color: #4056A1;
+  --box-shadow-hover: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  --tweet-bg: #f4f1ec;
 }
 
 .tweet-container {
@@ -14,8 +17,9 @@
   padding: 20px;
   margin: 20px 0;
   background-color: #f4f1ec;
-  transition: box-shadow 0.3s ease;
   font-family: "Source Sans 3", sans-serif;
+  transition: box-shadow 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 /* Header  of tweet container */
@@ -79,7 +83,7 @@
 
 /* Hover effect */
 .tweet:hover {
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--box-shadow-hover);
 }
 
 .tweet:hover .icons i {

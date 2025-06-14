@@ -1,3 +1,8 @@
+/* Creating CSS variable for colour */
+:root {
+  --main-text-color: #545149;
+}
+
 .tweet-container {
   max-width: 100%;
   margin: 0 auto;
@@ -5,11 +10,12 @@
 }
 
 .tweet {
-  border: 4px solid #545149;
-  padding: 10px;
+  border: 4px solid var(--main-text-color);
+  padding: 20px;
   margin: 20px 0;
   background-color: #f4f1ec;
   transition: box-shadow 0.3s ease;
+  font-family: "Source Sans 3", sans-serif;
 }
 
 /* Header  of tweet container */
@@ -17,7 +23,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Source Sans 3", sans-serif;
 }
 
 .tweet .user-info {
@@ -35,7 +40,7 @@
 .tweet .name {
   font-weight: bold;
   font-size: 1.1em;
-  color: #545149;
+  color: var(--main-text-color);
 }
 
 .tweet .handle {
@@ -47,8 +52,7 @@
 .tweet p {
   margin: 10px 0;
   font-size: 1em;
-  color: #545149;
-  font-family: "Source Sans 3", sans-serif;
+  color: var(--main-text-color);
 }
 
 /* Footer */
@@ -57,15 +61,14 @@
   justify-content: space-between;
   align-items: center;
   font-size: 0.9em;
-  color: #545149;
-  font-family: "Source Sans 3", sans-serif;
-  border-top: 4px solid #545149;
+  color: var(--main-text-color);
+  border-top: 4px solid var(--main-text-color);
   padding-top: 10px;
 }
 
 .tweet .icons i {
   margin-left: 10px;
-  color: #545149;
+  color: var(--main-text-color);
   transition: color 0.3s ease;
   cursor: pointer;
 }

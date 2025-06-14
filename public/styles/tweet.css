@@ -1,18 +1,18 @@
 .tweet-container {
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
+  max-height: min-content;
 }
 
 .tweet {
-  border: 2px solid #545149;
-  border-radius: 8px;
-  padding: 20px;
+  border: 4px solid #545149;
+  padding: 10px;
   margin: 20px 0;
   background-color: #f4f1ec;
   transition: box-shadow 0.3s ease;
 }
 
-/* Header */
+/* Header  of tweet container */
 .tweet header {
   display: flex;
   justify-content: space-between;
@@ -26,7 +26,7 @@
   gap: 10px;
 }
 
-.tweet img {
+.tweet .user-info img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -43,10 +43,10 @@
   font-weight: bold;
 }
 
-/* Tweet text */
+/* Tweet text/content */
 .tweet p {
-  margin: 20px 0;
-  font-size: 1.2em;
+  margin: 10px 0;
+  font-size: 1em;
   color: #545149;
   font-family: "Source Sans 3", sans-serif;
 }
@@ -59,13 +59,13 @@
   font-size: 0.9em;
   color: #545149;
   font-family: "Source Sans 3", sans-serif;
-  border-top: 2px solid #545149;
+  border-top: 4px solid #545149;
   padding-top: 10px;
 }
 
 .tweet .icons i {
   margin-left: 10px;
-  color: #1a1a1a;
+  color: #545149;
   transition: color 0.3s ease;
   cursor: pointer;
 }

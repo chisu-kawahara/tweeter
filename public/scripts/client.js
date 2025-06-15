@@ -45,18 +45,36 @@ const renderTweets = function(tweets) {
   }
 };
 
+
+//fetch tweets from server and render
 $(document).ready(function() {
   const loadTweets = function() {
     $.get('/api/tweets')
       .then((tweets) => {
-        $('#tweet-container').empty(); // Clear the old tweets
-        renderTweets(tweets); // Resend with new tweets
+        $('#tweet-container').empty();
+        renderTweets(tweets);
       })
       .catch((error) => {
         console.error("Failed to fetch tweets:", error);
       });
   };
 
-  // Call it on page load
+  // Call once on page load
   loadTweets();
+
+  // Submit tweet form without reloading the whold page
+  $('form').on('submit', function(event) {
+    event.preventDefault();
+    const formData = $(this).serialize();
+
+    $.post('/api/tweets', formData)
+      .then(() => {
+        loadTweets(); // Refresh tweets
+        $('#tweet-text').val(""); // Clear form
+        $('.counter').text("140"); // Reset counter?
+      })
+      .catch((error) => {
+        console.error("Failed to post tweet:", error);
+      });
+  });
 });

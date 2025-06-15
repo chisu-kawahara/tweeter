@@ -69,6 +69,15 @@ $(document).ready(function() {
         console.error("Failed to fetch tweets:", error);
       });
   };
+  const showError = function(message) {
+    const $error = $('#error-message');
+    $error.text(message).removeClass('hidden');
+  };
+  
+  const hideError = function() {
+    $('#error-message').addClass('hidden').text('');
+  };
+  
 
   // Call once on page load
   loadTweets();
@@ -77,11 +86,18 @@ $(document).ready(function() {
   $('form').on('submit', function(event) {
     event.preventDefault();
   
-    const tweetText = $('#tweet-text').val();
-  
-    if (!isTweetValid(tweetText)) {
-      return; // stop if invalid
-    }
+    const isTweetValid = function(tweetText) {
+      if (!tweetText || tweetText.trim() === "") {
+        showError("Your tweet cannot be empty!");
+        return false;
+      }
+      if (tweetText.length > 140) {
+        showError("Your tweet is too long! Maximum 140 characters.");
+        return false;
+      }
+      hideError(); // Clear error if valid
+      return true;
+    };
   
     const formData = $(this).serialize();
   
@@ -93,7 +109,8 @@ $(document).ready(function() {
     })
     .catch((error) => {
       console.error("Failed to post tweet:", error);
-      alert("Oops! Something went wrong when submitting your tweet. Please try again.");
+      showError("Oops! Something went wrong when submitting your tweet. Please try again.");
     });
+    
   });
 });

@@ -43,6 +43,9 @@ nav {
   font-size: 16px;
   cursor: pointer; /* pointer on hover */
   transition: background-color 0.3s ease;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-right: 0px;
 }
 
 .compose-button:hover {
@@ -54,9 +57,33 @@ nav {
   outline-offset: 2px;
 }
 
-#slide-arrow {
+.compose-wrapper {
   position: relative;
-  font-size: 24px; /* bigger arrow */
-  margin-bottom: 4px; /* space between arrow and text */
-  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+  max-height: fit-content;
+
+}
+
+#arrow-container {
+  display: flex;
+  position: relative;
+  height: 0;
+  margin-bottom: 5px;
+  align-items: center;
+
+}
+
+#slide-arrow {
+  display: none;
+  position: absolute;
+  font-size: 14px;
+  bottom: 100%; /* place it above the button */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  margin-bottom: 6px; /* ADD this to push arrow up */
+  pointer-events: none;
 }

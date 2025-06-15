@@ -74,7 +74,7 @@ const isTweetValid = function(tweetText) {
 
 
 // Main script
-const arrowDown = false;
+let arrowDown = false;
 $(document).ready(function() {
   // Load tweets from server and render them
   const loadTweets = function() {
@@ -90,7 +90,7 @@ $(document).ready(function() {
   };
 
   // Attach click handler to the compose button (once)
-  $('#compose-btn').on('click', function() {
+  $('#compose-toggle').on('click', function() {
     const $newTweetSection = $('.new-tweet');
     $newTweetSection.slideToggle('fast', function() {
       if ($newTweetSection.is(':visible')) {
@@ -102,10 +102,21 @@ $(document).ready(function() {
     if (!arrowDown) {
       $arrow.animate({ top: '10px' }, 200);
     } else {
-      $arrow.animate({ top: '0px' }, 200);
+      $arrow.animate({ top: '10px' }, 200);
     }
     arrowDown = !arrowDown;
   });
+
+  //hover handler
+  $('#compose-toggle').hover(
+    function() {
+      $('#slide-arrow').fadeIn(200);
+    },
+    function() {
+      $('#slide-arrow').fadeOut(200);
+    }
+  );
+
   // Initial page load
   loadTweets();
 

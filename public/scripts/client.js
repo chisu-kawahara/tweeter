@@ -47,13 +47,13 @@ const renderTweets = function(tweets) {
   }
 };
 
-// Show error message
+// Shows the error message by setting the text and sliding it down smoothly
 const showError = function(message) {
   const $error = $('#error-message');
   $error.text(message).slideDown();
 };
 
-// Hide error message
+// Hides the error message by sliding it up and clearing text
 const hideError = function() {
   $('#error-message').slideUp().text('');
 };

@@ -50,12 +50,12 @@ const renderTweets = function(tweets) {
 // Show error message
 const showError = function(message) {
   const $error = $('#error-message');
-  $error.text(message).removeClass('hidden');
+  $error.text(message).slideDown();
 };
 
 // Hide error message
 const hideError = function() {
-  $('#error-message').addClass('hidden').text('');
+  $('#error-message').slideUp().text('');
 };
 
 // Validate tweet input
@@ -68,7 +68,7 @@ const isTweetValid = function(tweetText) {
     showError("Your tweet is too long! Maximum 140 characters.");
     return false;
   }
-  hideError();
+  hideError(); // no errors
   return true;
 };
 
@@ -95,10 +95,12 @@ $(document).ready(function() {
   $('form').on('submit', function(event) {
     event.preventDefault();
 
+    hideError(); // First of all, hide error.
+
     const tweetText = $('#tweet-text').val();
 
     if (!isTweetValid(tweetText)) {
-      return;
+      return; //stops if the validation fails
     }
 
     const formData = $(this).serialize();

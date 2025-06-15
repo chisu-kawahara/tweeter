@@ -79,22 +79,25 @@ $(document).ready(function() {
   
     const tweetText = $('#tweet-text').val();
   
-    // Use the validation function
     if (!isTweetValid(tweetText)) {
-      return; // Stop submission if invalid
+      return; // stop if invalid
     }
   
     const formData = $(this).serialize();
   
     $.post('/api/tweets', formData)
-      .then(() => {
-        loadTweets(); // Refresh tweets
-        $('#tweet-text').val(""); // Clear form only on success
-        $('.counter').text("140"); // Reset counter?
+      .then((newTweet) => {
+        // add just the new tweet instead of reloading everything
+        const $tweet = createTweetElement(newTweet);
+        $('#tweet-container').prepend($tweet);
+  
+        $('#tweet-text').val(""); // clear form on success
+        $('.counter').text("140"); // reset counter
       })
       .catch((error) => {
         console.error("Failed to post tweet:", error);
         alert("Oops! Something went wrong when submitting your tweet. Please try again.");
       });
   });
+  
 });

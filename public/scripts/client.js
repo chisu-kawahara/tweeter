@@ -18,7 +18,7 @@ const createTweetElement = function(tweet) {
         <p>${tweet.content.text}</p>
       </div>
       <footer>
-        <span class="tweet-timestamp">${tweet.created_at}</span>
+        <span>${timeago.format(tweet.created_at)}</span></span>
         <div class="tweet-actions">
           <i class="fa-solid fa-flag"></i>
           <i class="fa-solid fa-retweet"></i>
@@ -33,7 +33,7 @@ const createTweetElement = function(tweet) {
 const renderTweets = function(tweets) {
   for (const tweet of tweets) {
     const $tweet = createTweetElement(tweet);
-    $('#tweets-container').append($tweet);
+    $('#tweets-container').prepend($tweet);
   }
 };
 

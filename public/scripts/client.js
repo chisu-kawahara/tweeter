@@ -45,6 +45,17 @@ const renderTweets = function(tweets) {
   }
 };
 
+const isTweetValid = function(tweetText) {
+  if (!tweetText || tweetText.trim() === "") {
+    alert("Your tweet cannot be empty!");
+    return false;
+  }
+  if (tweetText.length > 140) {
+    alert("Your tweet is too long! Maximum 140 characters.");
+    return false;
+  }
+  return true;
+};
 
 //fetch tweets from server and render
 $(document).ready(function() {
@@ -68,13 +79,9 @@ $(document).ready(function() {
   
     const tweetText = $('#tweet-text').val();
   
-    if (!tweetText || tweetText.trim() === "") {
-      alert("Your tweet cannot be empty!");
-      return;
-    }
-    if (tweetText.length > 140) {
-      alert("Your tweet is too long! Maximum 140 characters.");
-      return;
+    // Use the validation function
+    if (!isTweetValid(tweetText)) {
+      return; // Stop submission if invalid
     }
   
     const formData = $(this).serialize();
@@ -82,11 +89,12 @@ $(document).ready(function() {
     $.post('/api/tweets', formData)
       .then(() => {
         loadTweets(); // Refresh tweets
-        $('#tweet-text').val(""); // Clear form
-        $('.counter').text("140"); // Reset counter
+        $('#tweet-text').val(""); // Clear form only on success
+        $('.counter').text("140"); // Reset counter?
       })
       .catch((error) => {
         console.error("Failed to post tweet:", error);
+        alert("Oops! Something went wrong when submitting your tweet. Please try again.");
       });
   });
 });

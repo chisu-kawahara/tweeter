@@ -4,6 +4,14 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+//any text from users (e.g. tweet content) is safely escaped 
+//=>so that if they enter something like <script>alert('hacked!')</script>, 
+//it will not run as code, and instead just show up as harmless text.
+const escape = function(str) {
+  const div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 // Build HTML for a tweet
 const createTweetElement = function(tweet) {
   const $tweet = $(`
@@ -11,12 +19,12 @@ const createTweetElement = function(tweet) {
       <header>
         <div class="tweet-user">
           <img src="${tweet.user.avatars}" alt="User avatar">
-          <span class="tweet-name">${tweet.user.name}</span>
+          <span class="tweet-name">${escape(tweet.user.name)}</span>
         </div>
-        <span class="tweet-handle">${tweet.user.handle}</span>
+        <span class="tweet-handle">${escape(tweet.user.handle)}</span>
       </header>
       <div class="tweet-content">
-        <p>${tweet.content.text}</p>
+        <p>${escape(tweet.content.text)}</p>
       </div>
       <footer>
         <span>${timeago.format(tweet.created_at)}</span>
@@ -63,6 +71,7 @@ const isTweetValid = function(tweetText) {
   hideError();
   return true;
 };
+
 
 // Main script
 $(document).ready(function() {

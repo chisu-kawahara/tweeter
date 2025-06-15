@@ -65,13 +65,25 @@ $(document).ready(function() {
   // Submit tweet form without reloading the whold page
   $('form').on('submit', function(event) {
     event.preventDefault();
+  
+    const tweetText = $('#tweet-text').val();
+  
+    if (!tweetText || tweetText.trim() === "") {
+      alert("Your tweet cannot be empty!");
+      return;
+    }
+    if (tweetText.length > 140) {
+      alert("Your tweet is too long! Maximum 140 characters.");
+      return;
+    }
+  
     const formData = $(this).serialize();
-
+  
     $.post('/api/tweets', formData)
       .then(() => {
         loadTweets(); // Refresh tweets
         $('#tweet-text').val(""); // Clear form
-        $('.counter').text("140"); // Reset counter?
+        $('.counter').text("140"); // Reset counter
       })
       .catch((error) => {
         console.error("Failed to post tweet:", error);

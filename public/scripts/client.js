@@ -45,28 +45,18 @@ const renderTweets = function(tweets) {
   }
 };
 
-/*
-// Fake data
-const data = [array of tweet objects ];
-renderTweets(data);
-*/
-
 $(document).ready(function() {
-  loadTweets(); //Load all tweets right away when page opens
-
-  $('form').on('submit', function(event) {
-    event.preventDefault();
-    const formData = $(this).serialize();
-
-    $.post('/api/tweets', formData)
-      .then(() => {
-        loadTweets(); //Show new tweet
-        $('#tweet-text').val(""); // Clear input
-        $('.counter').text("140"); // Reset counter
+  const loadTweets = function() {
+    $.get('/api/tweets')
+      .then((tweets) => {
+        $('#tweet-container').empty(); // Clear the old tweets
+        renderTweets(tweets); // Resend with new tweets
       })
-      .catch(error => {
-        console.error('Error submitting tweet:', error);
+      .catch((error) => {
+        console.error("Failed to fetch tweets:", error);
       });
-  });
-});
+  };
 
+  // Call it on page load
+  loadTweets();
+});

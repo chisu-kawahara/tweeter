@@ -1,3 +1,10 @@
+:root {
+  --main-text-color: #545149;
+  --hover-icon-color: #4056A1;
+  --box-shadow-hover: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  --tweet-bg: #f4f1ec;
+}
+
 .new-tweet {
   display: flex;
   padding: 40px;
@@ -15,24 +22,24 @@
 
 .new-tweet textarea {
   border: none;
-  border-bottom: 4px solid #545149;
+  border-bottom: 4px solid var(--main-text-color);
   background-color: transparent;
   resize: none;
   width: 100%;
   font-size: 16px;
   font-family: "Source Sans 3", sans-serif;
-  color: #545149;
+  color: var(--main-text-color);
   outline: none;
   padding: 4px 0;
 }
 
 .new-tweet textarea:focus {
   outline: none;
-  border-bottom: 4px solid #545149; /* this adds the border line */
+  border-bottom: 4px solid var(--main-text-color); /* this adds the border line */
 }
 
 .new-tweet button {
-  background-color: #4056A1;     /*Blue background*/
+  background-color: var(--hover-icon-color);     /*Blue background*/
   color: #FFFFFF;  
   font-size: 16px;
   padding: 8px 16px;
@@ -44,7 +51,7 @@
 }
 
 .new-tweet button:hover {
-  background-color: #4056A1;
+  background-color: var(--hover-icon-color);
   cursor: pointer;
 }
 
@@ -52,7 +59,7 @@
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 12px;
-  color: #545149;
+  color: var(--main-text-color);
   min-width: 40px;
   text-align: center;
   display: inline-block;
@@ -66,7 +73,7 @@
   margin-bottom: 8px;   /* space below label */
   font-weight: bold;
   font-size: 16px;
-  color: #545149;
+  color: var(--main-text-color);
   margin-bottom: 4px;
   font-family: "Bungee", cursive;
 }
@@ -78,7 +85,7 @@
 
 .counter {
   margin-left: auto;
-  color: #545149;
+  color: var(--main-text-color);
   font-size: 1rem;
   font-weight: bold;
 }

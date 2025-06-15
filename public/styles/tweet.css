@@ -78,7 +78,7 @@
 }
 .tweet .icons i:hover {
   transform: scale(1.2);
-  color: #4056A1;
+  color: var(--hover-icon-color);
 }
 
 /* Hover effect */
@@ -87,5 +87,5 @@
 }
 
 .tweet:hover .icons i {
-  color: #4056A1;
+  color: var(--hover-icon-color);
 }

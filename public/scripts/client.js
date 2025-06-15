@@ -74,8 +74,9 @@ const isTweetValid = function(tweetText) {
 
 
 // Main script
+const arrowDown = false;
 $(document).ready(function() {
-  // Load tweets from server
+  // Load tweets from server and render them
   const loadTweets = function() {
     $.get('/api/tweets')
       .then((tweets) => {
@@ -88,7 +89,24 @@ $(document).ready(function() {
       });
   };
 
-  // Initial load
+  // Attach click handler to the compose button (once)
+  $('#compose-btn').on('click', function() {
+    const $newTweetSection = $('.new-tweet');
+    $newTweetSection.slideToggle('fast', function() {
+      if ($newTweetSection.is(':visible')) {
+        $('#tweet-text').focus();
+      }
+    });
+  
+    const $arrow = $('#slide-arrow');
+    if (!arrowDown) {
+      $arrow.animate({ top: '10px' }, 200);
+    } else {
+      $arrow.animate({ top: '0px' }, 200);
+    }
+    arrowDown = !arrowDown;
+  });
+  // Initial page load
   loadTweets();
 
   // Handle tweet form submission

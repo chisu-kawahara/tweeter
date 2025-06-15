@@ -1,3 +1,8 @@
+:root {
+  --hover-icon-color: #4056A1;
+
+}
+
 nav {
   display: flex;
   position: fixed;
@@ -5,12 +10,12 @@ nav {
   width: 100vw;
   text-align: center;
   align-items: center;
-  justify-content: space-between;
-  background-color: #4056A1;     /*Blue background*/
+  justify-content: space-between; /*Tile left, Button right*/
+  background-color: var(--hover-icon-color);     /*Blue background*/
   color: #FFFFFF;           /* White font color */
   padding: 0 1.5em;    
   /* Space on left and right - the size of an em is relative to its parent's font size*/
-  font-family: "Bungee", cursive;;
+  font-family: "Bungee", cursive;
 }
 
 .new-tweet-arrow {
@@ -18,5 +23,40 @@ nav {
   text-align: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 20px;
+  padding-top: 0%;
+  padding-bottom: 10px;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1em; /* spacing between nav items */
+}
+
+.compose-button {
+  background-color: var(--hover-icon-color);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer; /* pointer on hover */
+  transition: background-color 0.3s ease;
+}
+
+.compose-button:hover {
+  background-color: #0d8ddb;
+}
+
+.compose-button:focus {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 2px;
+}
+
+#slide-arrow {
+  position: relative;
+  font-size: 24px; /* bigger arrow */
+  margin-bottom: 4px; /* space between arrow and text */
+  transition: transform 0.3s ease;
 }

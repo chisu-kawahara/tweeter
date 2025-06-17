@@ -3,6 +3,7 @@
   --hover-icon-color: #4056A1;
   --box-shadow-hover: 4px 4px 10px rgba(0, 0, 0, 0.2);
   --tweet-bg: #f4f1ec;
+  --default-font-colour:  #FFFFFF;
 }
 
 .new-tweet {
@@ -40,7 +41,7 @@
 
 .new-tweet button {
   background-color: var(--hover-icon-color);     /*Blue background*/
-  color: #FFFFFF;  
+  color: var(--default-font-colour);
   font-size: 16px;
   padding: 8px 16px;
   border-radius: 5px;

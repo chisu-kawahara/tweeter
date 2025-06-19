@@ -36,6 +36,9 @@ main {
 /* Mobile styles (default) */
 .main {
   font-size: 30px;
+  display: flex;
+  flex-direction: column; /* default: stacked for mobile */
+  gap: 2rem; /* spacing between sections */
 }
 
 /* Tablet styles */
@@ -68,7 +71,7 @@ main {
 
   .menu {
     background-color: #111111;
-    color: #f0f0f0;
+    color: #FFFFFF;
     text-align: left;
   }
 

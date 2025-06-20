@@ -1,8 +1,3 @@
-:root {
-  --hover-icon-color: #4056A1;
-  --default-font-colour: #FFFFFF;
-}
-
 nav {
   display: flex;
   position: fixed;
@@ -11,8 +6,8 @@ nav {
   text-align: center;
   align-items: center;
   justify-content: space-between; /*Tile left, Button right*/
-  background-color: var(--hover-icon-color); /*Blue background*/
-  color: var(--default-font-colour); /* White font color */
+  background-color: #4056A1; /*Blue background*/
+  color: #FFFFFF; /* White font color */
   padding: 0 1.5em;
   /* Space on left and right - the size of an em is relative to its parent's font size*/
   font-family: "Bungee", cursive;
@@ -35,8 +30,8 @@ nav {
 }
 
 .compose-button {
-  background-color: var(--hover-icon-color);
-  color: var(--default-font-colour);
+  background-color: #4056A1;
+  color: #FFFFFF;
   border: none;
   border-radius: 20px;
   padding: 8px 16px;
@@ -53,7 +48,7 @@ nav {
 }
 
 .compose-button:focus {
-  outline: 3px solid var(--default-font-colour);
+  outline: 3px solid #FFFFFF;
   outline-offset: 2px;
 }
 
@@ -81,7 +76,7 @@ nav {
   bottom: 100%; /* place it above the button */
   left: 50%;
   transform: translateX(-50%);
-  color: var(--default-font-colour);
+  color: #FFFFFF;
   margin-bottom: 6px; /* ADD this to push arrow up */
   pointer-events: none;
 }

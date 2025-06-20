@@ -2,8 +2,6 @@
 
 Tweeter is a single-page web application that allows users to compose short tweets (under 140 characters) and view tweets posted by others. It mimics core Twitter functionality with a focus on front-end development skills and asynchronous requests using AJAX.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
-
 # Project Overview
 This project was built as part of the Lighthouse Labs Web Development Bootcamp to practice:
 - Responsive design using HTML and CSS
@@ -14,7 +12,7 @@ This project was built as part of the Lighthouse Labs Web Development Bootcamp t
 - Real-time character counting and form feedback
 - SASS (used optionally to improve and modularize CSS)
 
-# Feature
+## Feature
 - Compose new tweets with live character counter
 - Input validation for empty --------------/* or too-long tweets */
 - Error message display with smooth animations
@@ -27,12 +25,10 @@ This project was built as part of the Lighthouse Labs Web Development Bootcamp t
 !["Screenshot of Edit URLs page"]()
 
 ## Getting Started
-
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
 2. Clone your repository onto your local device.
-3. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+3. Install dependencies with `npm install` command.
+3. Start the web server with `npm start` command. The app will be served at <http://localhost:8080/>.
 
 ## Dependencies
 - Node.js: 5.10.x or above

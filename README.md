@@ -1,8 +1,30 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+Tweeter is a single-page web application that allows users to compose short tweets (under 140 characters) and view tweets posted by others. It mimics core Twitter functionality with a focus on front-end development skills and asynchronous requests using AJAX.
 
 This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+
+# Project Overview
+This project was built as part of the Lighthouse Labs Web Development Bootcamp to practice:
+- Responsive design using HTML and CSS
+- Dynamic DOM manipulation with jQuery
+- Form validation and input sanitization
+- AJAX requests to interact with a Node.js/Express backend
+- Time formatting using timeago.js
+- Real-time character counting and form feedback
+- SASS (used optionally to improve and modularize CSS)
+
+# Feature
+- Compose new tweets with live character counter
+- Input validation for empty --------------/* or too-long tweets */
+- Error message display with smooth animations
+- Tweets are displayed with timeago formatting and user metadata
+- Toggle tweet input area with slide animation
+- Styled with mobile-first, responsive layout
+
+## Final Product (Screenshots)
+!["Screenshot of URLs page"]()
+!["Screenshot of Edit URLs page"]()
 
 ## Getting Started
 
@@ -13,6 +35,8 @@ This repository is the starter code for the project: Students will fork and clon
 4. Go to <http://localhost:8080/> in your browser.
 
 ## Dependencies
-
-- Express
-- Node 5.10.x or above
+- Node.js: 5.10.x or above
+- Express: ^4.21.2
+- Body-Parser: ^2.2.0
+- Chance: ^1.1.13
+- Nodemon: ^3.1.9

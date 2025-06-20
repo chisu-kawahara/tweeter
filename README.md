@@ -2,7 +2,7 @@
 
 Tweeter is a single-page web application that allows users to compose short tweets (under 140 characters) and view tweets posted by others. It mimics core Twitter functionality with a focus on front-end development skills and asynchronous requests using AJAX.
 
-# Project Overview
+## Project Overview
 This project was built as part of the Lighthouse Labs Web Development Bootcamp to practice:
 - Responsive design using HTML and CSS
 - Dynamic DOM manipulation with jQuery

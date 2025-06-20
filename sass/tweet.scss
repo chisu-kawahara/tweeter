@@ -1,10 +1,10 @@
-/* Creating CSS variable for colour */
-:root {
-  --main-text-color: #545149;
-  --hover-icon-color: #4056A1;
-  --box-shadow-hover: 4px 4px 10px rgba(0, 0, 0, 0.2);
-  --tweet-bg: #f4f1ec;
-}
+$tweeter-primary-colour: #4056A1;
+$default-font-colour: #FFFFFF;
+$main-text-colour: #545149;
+$content-font-family: "Source Sans 3", sans-serif;
+$tweeter-font-family: "Bungee", cursive;
+$box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);;
+
 
 .tweet-container {
   max-width: 100%;
@@ -13,11 +13,11 @@
 }
 
 .tweet {
-  border: 4px solid var(--main-text-color);
+  border: 4px solid $main-text-colour;
   padding: 20px;
   margin: 20px 0;
   background-color: #f4f1ec;
-  font-family: "Source Sans 3", sans-serif;
+  font-family: $content-font-family;
   transition: box-shadow 0.3s ease;
   transition: color 0.3s ease;
 }
@@ -44,7 +44,7 @@
 .tweet .name {
   font-weight: bold;
   font-size: 1.1em;
-  color: var(--main-text-color);
+  color: $main-text-colour;
 }
 
 .tweet .handle {
@@ -56,7 +56,7 @@
 .tweet p {
   margin: 10px 0;
   font-size: 1em;
-  color: var(--main-text-color);
+  color: $main-text-colour;
 }
 
 /* Footer */
@@ -65,27 +65,27 @@
   justify-content: space-between;
   align-items: center;
   font-size: 0.9em;
-  color: var(--main-text-color);
-  border-top: 4px solid var(--main-text-color);
+  color: $main-text-colour;
+  border-top: 4px solid $main-text-colour;
   padding-top: 10px;
 }
 
 .tweet .icons i {
   margin-left: 10px;
-  color: var(--main-text-color);
+  color: $main-text-colour;
   transition: color 0.3s ease;
   cursor: pointer;
 }
 .tweet .icons i:hover {
   transform: scale(1.2);
-  color: var(--hover-icon-color);
+  color: $tweeter-primary-colour;
 }
 
 /* Hover effect */
 .tweet:hover {
-  box-shadow: var(--box-shadow-hover);
+  box-shadow: $box-shadow;
 }
 
 .tweet:hover .icons i {
-  color: var(--hover-icon-color);
+  color: $tweeter-primary-colour;
 }

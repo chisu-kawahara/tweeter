@@ -27,18 +27,15 @@ body {
 nav span {
   font-family: "Bungee", cursive;
 }
-main {
-  width: 90%;
-  margin: 0 auto;        /* centers horizontally */
-  background-color: inherit;  /* Match background color with body */
-}
-
 /* Mobile styles (default) */
 .main {
-  font-size: 30px;
   display: flex;
-  flex-direction: column; /* default: stacked for mobile */
-  gap: 2rem; /* spacing between sections */
+  flex-direction: column; /* mobile default */
+  gap: 2rem;
+  padding-top: 90px;
+  width: 100%;
+  margin: 0 auto;        /* centers horizontally */
+  background-color: inherit;  /* Match background color with body */
 }
 
 /* Tablet styles */
@@ -65,28 +62,22 @@ main {
     float: left;
   }
 
-  .feature {
-    line-height: 300px;
-  }
-
-  .menu {
-    background-color: #111111;
-    color: #FFFFFF;
-    text-align: left;
-  }
-
-  .tagline {
-    display: inline;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 12px;
-    color: tomato;
-    float: right;
-  }
-
   .main {
     max-width: 1024px;
     font-size: 16px;
     margin: 0 auto;
+    flex-direction: row;
+    gap: 10rem;
+    align-items: flex-start;
+    padding-top: 100px;
+  }
+
+  header {
+    flex: 1;
+    max-width: 300px;
+  }
+
+  .tweet-section {
+    flex: 2;
   }
 }

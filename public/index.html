@@ -46,39 +46,40 @@
         </div>
       </div>
     </nav>
-    <header>
-      <section class="profile-section">
-        <img src="/images/profile-hex.png" alt="profile picture">
-        <h2>Chisu</h2>
+
+    <main class="main">
+      <!-- Profile Section (left on desktop) -->
+      <header>
+        <section class="profile-section">
+          <img src="/images/profile-hex.png" alt="profile picture">
+          <h2>Chisu</h2>
+        </section>
+      </header>
+      <!-- Tweets Section (right on desktop) -->
+      <section class="tweet-section">
+        <section class="new-tweet">
+          <div id="error-message" class="error hidden"></div>
+          <form method="post" action="/api/tweets">
+            <label for="tweet-text" class="label">What are you humming about?</label>
+            <textarea name="text" id="tweet-text" maxlength="140"></textarea>
+
+            <div>
+              <button type="submit" class="tweet-btn">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>
+
+        <section class="container">
+          <h1>Hello Tweets</h1>
+          <p>Money doesn't just fall from the sky!</p>
+        </section>
+
+        <section class="tweet-container">
+        
+        </section>
       </section>
-      </main>
-    </header>
-
-    <main>
-    <section class="tweet-section">
-    <section class="new-tweet">
-      <div id="error-message" class="error hidden"></div>
-      <form method="post" action="/api/tweets">
-        <label for="tweet-text" class="label">What are you humming about?</label>
-        <textarea name="text" id="tweet-text" maxlength="140"></textarea>
-
-        <div>
-          <button type="submit" class="tweet-btn">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
-        </div>
-      </form>
-    </section>
-
-    <section class="container">
-      <h1>Hello Tweets</h1>
-      <p>Money doesn't just fall from the sky!</p>
-    </section>
-
-    <section class="tweet-container">
-    
-    </section>
-    </section>
-  </main>
+    </main>
 </body>
 
 </html>

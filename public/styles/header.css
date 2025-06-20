@@ -1,7 +1,7 @@
 header {
   display: flex;
   width: 100%;
-  padding-top: 250px;
+  padding-top: 150px;
   padding-bottom: 100px;
   flex-direction: column;
   height: 300px;
@@ -21,7 +21,7 @@ header img {
   display: flex;
   color: #FFFFFF;
   font-size: 30px;
-  width: 400px;
+  width: 100%;
   height: 400px;
   background-color: #fcbf49;
   align-items: center;
@@ -30,3 +30,4 @@ header img {
   padding-top: 50px;
 
 }
+

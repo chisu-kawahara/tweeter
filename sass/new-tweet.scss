@@ -1,10 +1,9 @@
-@charset "UTF-8";
 :root {
   --main-text-color: #545149;
   --hover-icon-color: #4056A1;
   --box-shadow-hover: 4px 4px 10px rgba(0, 0, 0, 0.2);
   --tweet-bg: #f4f1ec;
-  --default-font-colour: #FFFFFF;
+  --default-font-colour:  #FFFFFF;
 }
 
 .new-tweet {
@@ -15,12 +14,11 @@
   font-family: "Source Sans 3", sans-serif;
   align-items: center;
 }
-
 .new-tweet form {
-  display: flex;
+  display: flex;     
   width: 100%;
-  flex-direction: column; /* stack children vertically */
-  gap: 15px; /* space between form elements */
+  flex-direction: column;   /* stack children vertically */
+  gap: 15px;                /* space between form elements */
 }
 
 .new-tweet textarea {
@@ -42,7 +40,7 @@
 }
 
 .new-tweet button {
-  background-color: var(--hover-icon-color); /*Blue background*/
+  background-color: var(--hover-icon-color);     /*Blue background*/
   color: var(--default-font-colour);
   font-size: 16px;
   padding: 8px 16px;
@@ -72,8 +70,8 @@
 }
 
 .label {
-  display: block; /* full width */
-  margin-bottom: 8px; /* space below label */
+  display: block;       /* full width */
+  margin-bottom: 8px;   /* space below label */
   font-weight: bold;
   font-size: 16px;
   color: var(--main-text-color);
@@ -113,7 +111,6 @@ form div {
   margin-bottom: 10px;
   display: none;
 }
-
 .hidden {
   display: none;
 }

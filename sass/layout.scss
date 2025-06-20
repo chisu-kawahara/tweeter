@@ -6,7 +6,6 @@
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -14,20 +13,20 @@ html {
 /*
  * Global layout stuff
  */
+
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: "Source Sans 3", sans-serif;
 }
-
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
 nav span {
   font-family: "Bungee", cursive;
 }
-
 /* Mobile styles (default) */
 .main {
   display: flex;
@@ -35,8 +34,8 @@ nav span {
   gap: 2rem;
   padding-top: 10vh;
   width: 100%;
-  margin: 0 auto; /* centers horizontally */
-  background-color: inherit; /* Match background color with body */
+  margin: 0 auto;        /* centers horizontally */
+  background-color: inherit;  /* Match background color with body */
 }
 
 /* Tablet styles */
@@ -45,14 +44,17 @@ nav span {
     width: 33.3%;
     line-height: 600px;
   }
+
   .content {
     width: 66.7%;
     float: right;
   }
+
   .footer {
     clear: right;
   }
 }
+
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
   .hero {
@@ -60,6 +62,7 @@ nav span {
     float: left;
     height: 100vh;
   }
+
   .main {
     max-width: 90vw;
     font-size: 16px;
@@ -71,10 +74,12 @@ nav span {
     padding-left: 5vw;
     padding-right: 5vw;
   }
+
   header {
     flex: 1;
     max-width: 300px;
   }
+
   .tweet-section {
     flex: 2;
   }

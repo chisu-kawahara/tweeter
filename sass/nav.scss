@@ -1,6 +1,6 @@
 :root {
   --hover-icon-color: #4056A1;
-  --default-font-colour: #FFFFFF;
+  --default-font-colour:  #FFFFFF;
 }
 
 nav {
@@ -11,9 +11,9 @@ nav {
   text-align: center;
   align-items: center;
   justify-content: space-between; /*Tile left, Button right*/
-  background-color: var(--hover-icon-color); /*Blue background*/
-  color: var(--default-font-colour); /* White font color */
-  padding: 0 1.5em;
+  background-color: var(--hover-icon-color);     /*Blue background*/
+  color: var(--default-font-colour);           /* White font color */
+  padding: 0 1.5em;    
   /* Space on left and right - the size of an em is relative to its parent's font size*/
   font-family: "Bungee", cursive;
 }
@@ -64,6 +64,7 @@ nav {
   align-items: center;
   margin-top: 0px;
   max-height: fit-content;
+
 }
 
 #arrow-container {
@@ -72,6 +73,7 @@ nav {
   height: 0;
   margin-bottom: 5px;
   align-items: center;
+
 }
 
 #slide-arrow {

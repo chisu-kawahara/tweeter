@@ -32,7 +32,7 @@ nav span {
   display: flex;
   flex-direction: column; /* mobile default */
   gap: 2rem;
-  padding-top: 90px;
+  padding-top: 10vh;
   width: 100%;
   margin: 0 auto;        /* centers horizontally */
   background-color: inherit;  /* Match background color with body */
@@ -60,16 +60,19 @@ nav span {
   .hero {
     width: 33.3%;
     float: left;
+    height: 100vh;
   }
 
   .main {
-    max-width: 1024px;
+    max-width: 90vw;
     font-size: 16px;
     margin: 0 auto;
     flex-direction: row;
     gap: 10rem;
     align-items: flex-start;
     padding-top: 100px;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
 
   header {

@@ -79,8 +79,8 @@
   font-family: "Bungee", cursive;
 }
 
-.counter-warning {
-  color: red;
+.counter .counter-warning {
+  color: red !important;
   font-weight: bold;
 }
 
@@ -89,6 +89,7 @@
   color: var(--main-text-color);
   font-size: 1rem;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
 form div {

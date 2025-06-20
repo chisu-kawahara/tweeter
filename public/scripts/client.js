@@ -116,8 +116,24 @@ $(document).ready(function() {
       $('#slide-arrow').fadeOut(200);
     }
   );
+  
+  $('#tweet-text').on('input', function() {
+    const maxChars = 140;
+    const textLength = $(this).val().length;
+    const charsLeft = maxChars - textLength;
+    const $counter = $(this).closest('form').find('.counter');
 
-  // Initial page load
+    $counter.text(charsLeft);
+
+    if (charsLeft < 0) {
+      $counter.addClass('counter-warning');
+    } else {
+      $counter.removeClass('counter-warning');
+    }
+  });
+
+
+  // Initial page loadå
   loadTweets();
 
   // Handle tweet form submission

@@ -33,9 +33,10 @@ nav span {
   flex-direction: column; /* mobile default */
   gap: 2rem;
   padding-top: 10vh;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;        /* centers horizontally */
   background-color: inherit;  /* Match background color with body */
+  align-items: center;
 }
 
 /* Tablet styles */

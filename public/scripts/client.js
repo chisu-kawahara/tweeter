@@ -63,12 +63,12 @@ const hideError = function () {
 		});
 };
 
-const clear = function() {
+const clearMessage = function () {
 	$(".error").css("display", "none");
-}
+};
 
 // Validate tweet input
-const isTweetValid = function (tweetText) {
+function isTweetValid(tweetText) {
 	if (!tweetText || tweetText.trim() === "") {
 		showError("Your tweet cannot be empty!");
 		return false;
@@ -80,7 +80,7 @@ const isTweetValid = function (tweetText) {
 
 	hideError(); // no errors]
 	return true;
-};
+}
 
 // Main script
 let arrowDown = false;

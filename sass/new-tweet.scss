@@ -21,7 +21,7 @@ $tweeter-font-family: "Bungee", cursive;
 
 .new-tweet textarea {
   border: none;
-  border-bottom: 4px solid var(--main-text-color);
+  border-bottom: 4px solid $main-text-colour;
   background-color: transparent;
   resize: none;
   width: 100%;

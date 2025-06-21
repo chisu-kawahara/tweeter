@@ -28,11 +28,12 @@ const createTweetElement = function (tweet) {
       </div>
       <footer>
         <span>${timeago.format(tweet.created_at)}</span>
-        <div class="tweet-actions">
-          <i class="fa-solid fa-flag"></i>
-          <i class="fa-solid fa-retweet"></i>
-          <i class="fa-solid fa-heart"></i>
+        <div class="icons">
+        <i class="fa-solid fa-flag"></i>
+        <i class="fa-solid fa-retweet"></i>
+        <i class="fa-solid fa-heart"></i>
         </div>
+
       </footer>
     </article>
   `);
@@ -115,21 +116,6 @@ $(document).ready(function () {
 			$("#slide-arrow").fadeOut(200);
 		}
 	);
-
-	// $('#tweet-text').on('input', function() {
-	//   const maxChars = 140;
-	//   const textLength = $(this).val().length;
-	//   const charsLeft = maxChars - textLength;
-	//   const $counter = $(this).closest('form').find('.counter');
-
-	//   $counter.text(charsLeft);
-
-	//   if (charsLeft < 0) {
-	//     $counter.addClass('counter-warning');
-	//   } else {
-	//     $counter.removeClass('counter-warning');
-	//   }
-	// });
 
 	// Initial page loadå
 	loadTweets();

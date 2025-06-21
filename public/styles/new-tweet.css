@@ -1,111 +1,110 @@
 @charset "UTF-8";
 .new-tweet {
-  display: flex;
-  padding: 40px;
-  max-width: 800px; /* max width so it doesn’t stretch too wide */
-  margin: 20px auto; /* center horizontally with vertical margin */
-  font-family: "Source Sans 3", sans-serif;
-  align-items: center;
+	display: flex;
+	padding: 40px;
+	max-width: 800px; /* max width so it doesn’t stretch too wide */
+	margin: 20px auto; /* center horizontally with vertical margin */
+	font-family: "Source Sans 3", sans-serif;
+	align-items: center;
 }
 
 .new-tweet form {
-  display: flex;
-  width: 100%;
-  flex-direction: column; /* stack children vertically */
-  gap: 15px; /* space between form elements */
+	display: flex;
+	width: 100%;
+	flex-direction: column; /* stack children vertically */
+	gap: 15px; /* space between form elements */
 }
 
 .new-tweet textarea {
-  border: none;
-  border-bottom: 4px solid var(--main-text-color);
-  background-color: transparent;
-  resize: none;
-  width: 100%;
-  font-size: 16px;
-  font-family: "Source Sans 3", sans-serif;
-  color: #545149;
-  outline: none;
-  padding: 4px 0;
+	border: none;
+	border-bottom: 4px solid var(--main-text-color);
+	background-color: transparent;
+	resize: none;
+	width: 100%;
+	font-size: 16px;
+	font-family: "Source Sans 3", sans-serif;
+	color: #545149;
+	outline: none;
+	padding: 4px 0;
 }
 
 .new-tweet textarea:focus {
-  outline: none;
-  border-bottom: 4px solid #545149; /* this adds the border line */
+	outline: none;
+	border-bottom: 4px solid #545149; /* this adds the border line */
 }
 
 .new-tweet button {
-  background-color: #4056A1; /*Blue background*/
-  color: #FFFFFF;
-  font-size: 16px;
-  padding: 8px 16px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  font-family: "Bungee", cursive;
+	background-color: #4056a1; /*Blue background*/
+	color: #ffffff;
+	font-size: 16px;
+	padding: 8px 16px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	font-family: "Bungee", cursive;
 }
 
 .new-tweet button:hover {
-  background-color: #4056A1;
-  cursor: pointer;
+	background-color: #4056a1;
+	cursor: pointer;
 }
 
 .output {
-  padding: 5px 10px;
-  border-radius: 4px;
-  font-size: 12px;
-  color: #545149;
-  min-width: 40px;
-  text-align: center;
-  display: inline-block;
-  margin-left: 10px; /* space from the button */
-  padding-left: auto;
-  font-family: "Source Sans 3", sans-serif;
+	padding: 5px 10px;
+	border-radius: 4px;
+	font-size: 12px;
+	color: #545149;
+	min-width: 40px;
+	text-align: center;
+	display: inline-block;
+	margin-left: 10px; /* space from the button */
+	padding-left: auto;
+	font-family: "Source Sans 3", sans-serif;
 }
 
 .label {
-  display: block; /* full width */
-  margin-bottom: 8px; /* space below label */
-  font-weight: bold;
-  font-size: 16px;
-  color: #545149;
-  margin-bottom: 4px;
-  font-family: "Bungee", cursive;
+	display: block; /* full width */
+	margin-bottom: 8px; /* space below label */
+	font-weight: bold;
+	font-size: 16px;
+	color: #545149;
+	margin-bottom: 4px;
+	font-family: "Bungee", cursive;
 }
 
-.counter .counter-warning {
-  color: red !important;
-  font-weight: bold;
+.counter-warning {
+	color: red !important;
 }
 
 .counter {
-  margin-left: auto;
-  color: #545149;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: color 0.3s;
+	margin-left: auto;
+	color: #545149;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: color 0.3s;
 }
 
 form div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 8px;
-  padding-top: 8px;
-  font-family: "Bungee", cursive;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 8px;
+	padding-top: 8px;
+	font-family: "Bungee", cursive;
 }
 
 .error {
-  color: red;
-  font-weight: bold;
-  padding: 10px;
-  background-color: #ffe6e6;
-  border: 1px solid red;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  display: none;
+	color: red;
+	font-weight: bold;
+	padding: 10px;
+	background-color: #ffe6e6;
+	border: 1px solid red;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	display: none;
 }
 
 .hidden {
-  display: none;
+	display: none;
 }

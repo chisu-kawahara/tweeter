@@ -6,7 +6,7 @@ nav {
   text-align: center;
   align-items: center;
   justify-content: space-between; /*Tile left, Button right*/
-  background-color: #4056A1; /*Blue background*/
+  background-color: #fcbf49;
   color: #FFFFFF; /* White font color */
   padding: 0 1.5em;
   /* Space on left and right - the size of an em is relative to its parent's font size*/
@@ -30,7 +30,17 @@ nav {
 }
 
 .compose-button {
-  background-color: #4056A1;
+  background-color: #fcbf49;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer; /* pointer on hover */
+  transition: background-color 0.3s ease;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-right: 0px;
   color: #FFFFFF;
   border: none;
   border-radius: 20px;
@@ -79,4 +89,15 @@ nav {
   color: #FFFFFF;
   margin-bottom: 6px; /* ADD this to push arrow up */
   pointer-events: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: #4056a1;
+  }
+
+  .compose-button {
+    background-color: #4056a1;
+  }
+
 }

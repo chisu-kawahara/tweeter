@@ -1,54 +1,63 @@
 .tweet-container {
   max-width: 100%;
   margin: 0 auto;
-  max-height: min-content;
+  padding: 60px;
 }
 
 .tweet {
   border: 4px solid #545149;
   padding: 20px;
-  margin: 20px 0;
+  margin: 30px 0;
   background-color: #f4f1ec;
   font-family: "Source Sans 3", sans-serif;
   transition: box-shadow 0.3s ease;
-  transition: color 0.3s ease;
 }
 
-/* Header  of tweet container */
+/* Header of tweet container */
 .tweet header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+
 }
 
 .tweet .user-info {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 10px;
+  overflow: visible;
 }
 
 .tweet .user-info img {
+  border-radius: 50%;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
+  display: block;
+  margin: 0;
+  
 }
 
 .tweet .name {
   font-weight: bold;
   font-size: 1.1em;
   color: #545149;
+  align-self: flex-start;
 }
 
 .tweet .handle {
   color: #c0c0c0;
   font-weight: bold;
+  font-size: 1em;
+  align-self: flex-start; /* this is the key to push it to the top */
+  margin-top: 0;          /* remove any accidental spacing */
 }
 
 /* Tweet text/content */
-.tweet p {
-  margin: 10px 0;
-  font-size: 1em;
+.tweet-content p {
+  margin: 15px 0;
+  font-size: 1.2em;
   color: #545149;
+  word-wrap: break-word;
 }
 
 /* Footer */
@@ -65,7 +74,7 @@
 .tweet .icons i {
   margin-left: 10px;
   color: #545149;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.2s ease;
   cursor: pointer;
 }
 

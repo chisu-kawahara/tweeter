@@ -17,11 +17,11 @@ const createTweetElement = function (tweet) {
 	const $tweet = $(`
     <article class="tweet">
       <header>
-        <div class="tweet-user">
+        <div class="user-info">
           <img src="${tweet.user.avatars}" alt="User avatar">
-          <span class="tweet-name">${escape(tweet.user.name)}</span>
+          <span class="name">${escape(tweet.user.name)}</span>
         </div>
-        <span class="tweet-handle">${escape(tweet.user.handle)}</span>
+        <span class="handle">${escape(tweet.user.handle)}</span>
       </header>
       <div class="tweet-content">
         <p>${escape(tweet.content.text)}</p>

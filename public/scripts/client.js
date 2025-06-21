@@ -51,7 +51,7 @@ const renderTweets = function (tweets) {
 // Shows the error message by setting the text and sliding it down smoothly
 const showError = function (message) {
 	const $error = $("#error-message");
-	$error.text(message).slideDown();
+  $error.removeClass("hidden").text(message).slideDown();
 };
 
 // Hides the error message by sliding it up and clearing text
@@ -117,7 +117,7 @@ $(document).ready(function () {
 		}
 	);
 
-	// Initial page loadå
+	// Initial page load
 	loadTweets();
 
 	// Handle tweet form submission

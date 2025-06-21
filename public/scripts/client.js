@@ -51,13 +51,21 @@ const renderTweets = function (tweets) {
 // Shows the error message by setting the text and sliding it down smoothly
 const showError = function (message) {
 	const $error = $("#error-message");
-  $error.removeClass("hidden").text(message).slideDown();
+	$error.stop(true, true).removeClass("hidden").text(message).slideDown("fast");
 };
 
 // Hides the error message by sliding it up and clearing text
 const hideError = function () {
-	$("#error-message").slideUp().text("");
+	$("#error-message")
+		.stop(true, true)
+		.slideUp("fast", function () {
+			$(this).text(""); // clear message only after hidden[]
+		});
 };
+
+const clear = function() {
+	$(".error").css("display", "none");
+}
 
 // Validate tweet input
 const isTweetValid = function (tweetText) {
@@ -69,7 +77,8 @@ const isTweetValid = function (tweetText) {
 		showError("Your tweet is too long! Maximum 140 characters.");
 		return false;
 	}
-	hideError(); // no errors
+
+	hideError(); // no errors]
 	return true;
 };
 

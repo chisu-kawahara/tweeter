@@ -95,6 +95,7 @@ form div {
 }
 
 .error {
+  display: none;
 	color: red;
 	font-weight: bold;
 	padding: 10px;
@@ -102,7 +103,6 @@ form div {
 	border: 1px solid red;
 	border-radius: 5px;
 	margin-bottom: 10px;
-	display: none;
   font-family: "Source Sans 3", sans-serif;
 }
 
@@ -116,6 +116,6 @@ form div {
 
   .new-tweet {
     width: 100%;
-    
+
   }
 }

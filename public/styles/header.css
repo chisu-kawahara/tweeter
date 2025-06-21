@@ -24,3 +24,20 @@ header {
   padding-top: 150px;
   padding-bottom: 100px;
 }
+
+
+
+/* Header - Desktop version */
+@media only screen and (min-width: 1024px) {
+
+  .profile-section {
+    width: 400px;
+    height: 400px;
+  }
+
+  header {
+    flex: 1;
+    max-width: 30%;
+  }
+
+}

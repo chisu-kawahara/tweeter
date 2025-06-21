@@ -28,8 +28,6 @@ nav span {
   font-family: "Bungee", cursive;
 }
 
-
-
 /* Mobile styles (default) */
 .main {
   display: flex;
@@ -38,58 +36,48 @@ nav span {
   width: 100%;
   margin: 0; /* centers horizontally */
   background-color: inherit; /* Match background color with body */
+  height: 300vh;
 }
 .tweet-section {
-  padding-top: 400px;
+  padding-top: 150px;
+  height: 300vh;
+
 }
+
 
 /* Desktop styles */
 @media only screen and (min-width: 1024px) {
-  .hero {
-    width: 33.3%;
-    float: left;
-    height: 100vh;
-  }
+
   .main {
     max-width: 1200vw;
     font-size: 16px;
     margin: 0 auto;
     flex-direction: row;
-    gap: 10rem;
+    gap: 5rem;
     align-items: flex-start;
-    padding-top: 100px;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-top: 120px;
+    padding-left: 0;
+    padding-right: 0;
     justify-content: center;
+    width: 100%;
 
   }
-  header {
-    flex: 1;
-    max-width: 30%;
-  }
+
   .tweet-section {
-    flex: 5;
-    max-width: 50%;
+    flex: auto;
+    max-width: 55%;
     align-items: center;
-    padding-top: 30px;
     display: flex;
     color: #545149;
     font-size: 30px;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    padding-top: 970px;
+    padding-top: 60px;
     padding-bottom: 30px;
-  }
-  .new-tweet {
-    width: 60vw;
-  }
-
-  .tweet-container {
-    width: 60vw;
-    padding: 30px;
+    
   }
 }
 

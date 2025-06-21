@@ -59,11 +59,10 @@
       <!-- New Tweets Section (right on desktop) -->
       <section class="tweet-section">
         <section class="new-tweet">
-          <div id="error-message" class="error hidden"></div>
           <form method="post" action="/api/tweets">
             <label for="tweet-text" class="label">What are you humming about?</label>
-            <textarea name="text" id="tweet-text" ></textarea>
-
+            <div id="error-message" class="error hidden"></div>
+            <textarea name="text" id="tweet-text"></textarea>
             <div>
               <button type="submit" class="tweet-btn">Tweet</button>
               <span class="counter">140</span>
@@ -74,24 +73,19 @@
         <section class="tweet-container">
           <article class="tweet">
             <!-- TWEET HEADER -->
-            <section class="tweet-header">
+            <header>
               <div class="user-info">
                 <img src="https://via.placeholder.com/50" alt="User avatar">
                 <span class="name">Dexter.B</span>
               </div>
               <span class="handle">@dexter123</span>
-            </section>
-        
+            </header>
+            <!-- TWEET CONTENT -->
             <div class="tweet-content">
             </div>
-        
+            
+            <!-- FOOTER -->
             <footer>
-              <span class="date">2 days ago</span>
-              <div class="icons">
-                <i class="fa-regular fa-flag"></i>
-                <i class="fa-regular fa-retweet"></i>
-                <i class="fa-regular fa-heart"></i>
-              </div>
             </footer>
           </article>
         </section>

@@ -23,9 +23,11 @@
 /* Header of tweet container */
 .tweet header {
   display: flex;
-  justify-content: space-between; /* avatar+name on left, handle on right */
   padding-block-start: inherit;
   flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+  justify-content: space-between;
 }
 
 .tweet .user-info {
@@ -110,7 +112,6 @@
     flex-direction: column;
     width: 100%;
     padding: 20px;
-    justify-content: center;
     align-items: center;
     
   }

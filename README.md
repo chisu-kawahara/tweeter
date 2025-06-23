@@ -22,9 +22,10 @@ This project was built as part of the Lighthouse Labs Web Development Bootcamp t
 
 ## Final Product (Screenshots)
 !["tweeter_desktop_style.png"](https://github.com/chisu-kawahara/tweeter/public/images/tweeter_desktop_style.png)
-!["tweeter_mobile_style_1.png"](https://github.com/chisu-kawahara/tweeter/public/images/tweeter_mobile_style_1.png)
-!["tweeter_mobile_style_2.png"](https://github.com/chisu-kawahara/tweeter/public/images/tweeter_mobile_style_2.png)
-
+!["tweeter_mobile_style_1.png"](https://github.com/chisu-kawahara/tweeter/public/images
+/tweeter_mobile_style_1.png)
+!["tweeter_mobile_style_2.png"](https://github.com/chisu-kawahara/tweeter/public/images
+/tweeter_mobile_style_2.png)
 
 ## Getting Started
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.

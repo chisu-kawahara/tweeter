@@ -121,7 +121,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start; /* keeps them at the top */
-    width: 100%;
+    max-width: 100%;
     flex-wrap: nowrap; /* prevent stacking on wider screens */
+    flex-direction: row;
+  }
+  .tweet .handle {
+    align-self: flex-end;
+    margin-top: 5px;
   }
 }

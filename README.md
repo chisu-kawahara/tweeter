@@ -21,9 +21,10 @@ This project was built as part of the Lighthouse Labs Web Development Bootcamp t
 - Styled with mobile-first, responsive layout
 
 ## Final Product (Screenshots)
-!["tweeter-desktop-style"](https://github.com/chisu-kawahara/tweeter/public/images/tweeter-desktop-style.png)
-!["tweeter-mobile-style-1"](https://github.com/chisu-kawahara/tweeter/public/images/tweeter-mobile-style-1.png)
-!["tweeter-mobile-style-2"](https://github.com/chisu-kawahara/tweeter/public/images/tweeter-mobile-style-2.png)
+!["tweeter-desktop-style"](https://raw.githubusercontent.com/chisu-kawahara/tweeter/main/public/images/tweeter-desktop-style.png)
+!["tweeter-mobile-style-1"](https://raw.githubusercontent.com/chisu-kawahara/tweeter/main/public/images/tweeter-mobile-style-1.png)
+!["tweeter-mobile-style-2"](https://raw.githubusercontent.com/chisu-kawahara/tweeter/main/public/images/tweeter-mobile-style-2.png)
+
 
 ## Getting Started
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.

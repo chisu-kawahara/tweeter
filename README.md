@@ -21,9 +21,9 @@ This project was built as part of the Lighthouse Labs Web Development Bootcamp t
 - Styled with mobile-first, responsive layout
 
 ## Final Product (Screenshots)
-!["tweeter-desktop-style"](https://github.com/chisu-kawahara/tweeter/public/images/tweeter-desktop-style.png)
-!["tweeter-mobile-style-1"](https://github.com//chisu-kawahara/tweeter/main/public/images/tweeter-mobile-style-1.png)
-!["tweeter-mobile-style-2"](https://github.com/chisu-kawahara/tweeter/main/public/images/tweeter-mobile-style-2.png)
+!["tweeter_desktop_style.png"](https://github.com/chisu-kawahara/tweeter/public/images/tweeter_desktop_style.png)
+!["tweeter_mobile_style_1.png"](https://github.com//chisu-kawahara/tweeter/main/public/images/tweeter_mobile_style_1.png)
+!["tweeter_mobile_style_2.png"](https://github.com/chisu-kawahara/tweeter/main/public/images/ttweeter_mobile_style_2.png)
 
 
 ## Getting Started

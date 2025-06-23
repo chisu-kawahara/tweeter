@@ -14,15 +14,16 @@ This project was built as part of the Lighthouse Labs Web Development Bootcamp t
 
 ## Feature
 - Compose new tweets with live character counter
-- Input validation for empty --------------/* or too-long tweets */
+- Input validation for empty
 - Error message display with smooth animations
 - Tweets are displayed with timeago formatting and user metadata
 - Toggle tweet input area with slide animation
 - Styled with mobile-first, responsive layout
 
 ## Final Product (Screenshots)
-!["Screenshot of URLs page"]()
-!["Screenshot of Edit URLs page"]()
+!["Screenshot of Desktop Style"](https://github.com/chisu-kawahara/tinyapp/public/images/tweeter-desktop-style.png)
+!["Screenshot of Mobile Style"](https://github.com/chisu-kawahara/tinyapp/public/images/tweeter-mobile-style-1.png)
+!["Screenshot of Mobile Style"](https://github.com/chisu-kawahara/tinyapp/public/images/tweeter-mobile-style-2.png)
 
 ## Getting Started
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.

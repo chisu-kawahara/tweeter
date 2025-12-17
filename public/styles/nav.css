@@ -6,7 +6,7 @@ nav {
   text-align: center;
   align-items: center;
   justify-content: space-between; /*Tile left, Button right*/
-  background-color: #fcbf49;
+  background-color: #4056a1;
   color: #FFFFFF; /* White font color */
   padding: 0 1.5em;
   /* Space on left and right - the size of an em is relative to its parent's font size*/
@@ -30,7 +30,7 @@ nav {
 }
 
 .compose-button {
-  background-color: #fcbf49;
+  background-color: #4056a1;
   color: #FFFFFF;
   border: none;
   border-radius: 20px;
